@@ -12,7 +12,7 @@ Low-level console access to manage your x86 server can be very useful, and sever
 ## Features
 * Keeps the attached machine easily reachable even if it's network ports are down or misconfigured
 * OS independent, and if your chipset supports it, you can manage your UEFI/BIOS over WiFi
-* Client independent, you can use any WiFi capable device (e.g. smarthphones, laptops, etc.)
+* Client independent, you can use any WiFi capable device (e.g. smartphones, laptops, etc.)
 * Code independent and upgradeable, you can upload any serial-to-wifi bridge solution, even your own
 * Components are very cheap, and you have a few options to select the ESP8266 microcontroller
 * Can be powered from microUSB or internal 12V source (recommended free fan header)
