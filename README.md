@@ -18,6 +18,7 @@ Low-level console access to manage your x86 server can be very useful, and sever
 * Can be powered from microUSB or internal 12V source (recommended free fan header)
 * Easily accessible pin headers for potential new features
 * Made with THT and superior SMD components, to allow soldering by hand with average tools
+* Can link to non-x86 RS-232 capable devices as well
 
 ## Technical details
 
@@ -53,7 +54,7 @@ The following components are needed to assemble the pcb.
 | Component  | Type | Package | Value | Quantity |
 | ---------- | ---- | ------- | ----- | -------- |
 | C1 | Capacitor | SMD-2010 | 10uF | 1 | 
-| C2-C7 | Capacitor | SMD-2010 | 100nF | 5 | 
+| C2-C6 | Capacitor | SMD-2010 | 100nF | 5 | 
 | LD1117 | Voltage regulator | SOT223 | LD1117S33TR | 1 |
 | MAX3232 | RS232 Driver | DIP16 | MAX3232CPE | 1 |
 | Pin socket | Connector | 2.54mm single row | 8-pin female | 2 |
@@ -65,8 +66,8 @@ The following components are needed to assemble the pcb.
 1. Clone or download this repository.
 2. Use the prebuilt [gerber archive](kicad_board/gerber/termint_wifi.zip) to print the pcb. Any chinese manufacturer (JLPCB, ALLPCB, PCBWAY, etc.) can fabricate a copy for a couple dollars. Really, it's dirt cheap.
 3. Once you got the pcb and the few listed components, assemble termint-wifi by hand soldering, no special tool needed.
-4. Upload the desired code (from the list or your own) to the selected Wemos using esptool or other similar software, and put it in the socket.
+4. Upload the desired code (from the list or your own) to the selected Wemos using [esptool](https://github.com/espressif/esptool) or other similar software, and put it in the socket.
 5. Mount the board in the target machine's chassis, wire up the listed connections, apply power.
-6. Based on the code you use, connect to the board over WiFi and test the access to your RS-232 port.
+6. Based on the code you use, connect over WiFi and test the access to your RS-232 port.
 
 *The uploaded board fits perfectly on the side of an Antec ISK600M chassis. Resize the pcb in KiCAD as needed.*
