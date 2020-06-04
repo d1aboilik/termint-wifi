@@ -2,7 +2,7 @@
 This board allows the user to establish wireless terminal connection by reaching an internal RS-232 header over WiFi, using ESP8266 &amp; MAX3232.
 
 ## Description
-Low-level console access to manage your x86 server can be very useful, and several motherboards offer internal and external RS-232 ports for this purpose. While these are very simple and reliable, we do not want to play around with serial cables and their adapters all the time, to attach our client devices. This is where termint-wifi comes in, making one of your internal serial ports WiFi-ready, granting a convenient way to accomplish server management. Mounted and wired up in the chassis, it can provide a solid backup path.
+Low-level console access to manage your x86 server can be very useful, and several motherboards offer internal and external RS-232 ports for this purpose. While these are very simple and reliable, we do not want to play around with serial cables and their adapters all the time, to attach our client devices. This is where termint-wifi comes in, making one of your internal serial ports WiFi-ready, granting a convenient way to accomplish server management. It can provide a solid backup path if mounted and wired up in the machine's chassis.
 
 ![render1](graphics/render1.jpg)
 ![render2](graphics/render2.jpg)
