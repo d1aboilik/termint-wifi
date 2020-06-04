@@ -53,8 +53,8 @@ The following components are needed to assemble the pcb.
 
 | Component  | Type | Package | Value | Quantity |
 | ---------- | ---- | ------- | ----- | -------- |
-| C1 | Capacitor | SMD-2010 | 10uF | 1 | 
-| C2-C6 | Capacitor | SMD-2010 | 100nF | 5 | 
+| C1 | Capacitor | SMD-1210 | 10uF | 1 | 
+| C2-C6 | Capacitor | SMD-1210 | 100nF | 5 | 
 | LD1117 | Voltage regulator | SOT223 | LD1117S33TR | 1 |
 | MAX3232 | RS232 Driver | DIP16 | MAX3232CPE | 1 |
 | Pin socket | Connector | 2.54mm single row | 8-pin female | 2 |
