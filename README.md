@@ -49,7 +49,7 @@ Microcontrollers are very smart nowadays, but RS-232 ports are still a bit diffi
 *Models with external antenna are recommended, if the board is mounted inside chassis.*
 
 ## PCB BOM
-The following components are needed to assemble the pcb.
+The following components are needed to assemble the pcb:
 
 | Component  | Type | Package | Value | Quantity |
 | ---------- | ---- | ------- | ----- | -------- |
@@ -60,7 +60,13 @@ The following components are needed to assemble the pcb.
 | Pin socket | Connector | 2.54mm single row | 8-pin female | 2 |
 | Pin header | Connector | 2.54mm single row | 8-pin male | 2 |
 | Pin header, angled | Connector | 2.54mm single row | 4-pin male | 1 |
-| *Optional* | *IC socket* | *DIP16* | *16pin* | *1* |
+
+Additional components:
+
+| Component  | Type | Package | Quantity |
+| ---------- | ---- | ------- | -------- |
+| *Wemos D1 mini* | *ESP8266 board* | *Lite/Pro/Pro_V2* | *1* | 
+| *IC socket* | *2.54mm THT* | *DIP16* | *1* |
 
 ## Assembly and application
 1. Clone or download this repository.
