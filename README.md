@@ -61,12 +61,12 @@ The following components are needed to assemble the pcb:
 | Pin header | Connector | 2.54mm single row | 8-pin male | 2 |
 | Pin header, angled | Connector | 2.54mm single row | 4-pin male | 1 |
 
-Additional components:
+Additional parts:
 
 | Component  | Type | Package | Quantity |
 | ---------- | ---- | ------- | -------- |
 | *Wemos D1 mini* | *ESP8266 board* | *Lite/Pro/Pro_V2* | *1* | 
-| *IC socket* | *2.54mm THT* | *DIP16* | *1* |
+| *IC socket (optional)* | *2.54mm THT* | *DIP16* | *1* |
 
 ## Assembly and application
 1. Clone or download this repository.
