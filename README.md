@@ -17,7 +17,7 @@ Low-level console access to manage your x86 server can be very useful, and sever
 * Components are very cheap, and you have a few options to select the ESP8266 microcontroller
 * Can be powered from microUSB or internal 12V source (recommended free fan header)
 * Easily accessible pin headers for potential new features
-* Made with THT and superior SMD components, to allow soldering by hand with average tools
+* Made with THT and mostly superior SMD components, to allow soldering by hand with average tools
 * Can link to non-x86 RS-232 capable devices as well
 
 ## Technical details
@@ -39,6 +39,8 @@ Microcontrollers are very smart nowadays, but RS-232 ports are still a bit diffi
 | [esp-link](https://github.com/jeelabs/esp-link) | Tested | 
 | [ESPEasy](https://github.com/letscontrolit/ESPEasy) | Tested | 
 
+*Keep in mind you can only turn on MAX3232 from code, by setting GPIO5 HIGH. This prevents boot problems caused by pulling Wemos TX low too early.*
+
 | Compatible ESP8266 boards | Tested |
 | ---------- | ---- |
 | Wemos D1 mini Pro V1.x (wemos, blue) | Tested |
@@ -53,10 +55,16 @@ The following components are needed to assemble the pcb:
 
 | Component  | Type | Package | Value | Quantity |
 | ---------- | ---- | ------- | ----- | -------- |
-| C1 | Capacitor | SMD-1210 | 10uF | 1 | 
-| C2-C6 | Capacitor | SMD-1210 | 100nF | 5 | 
+| R1 | Resistor | SMD-1206 | 100kΩ | 1 |
+| R2 | Resistor | SMD-1206 | 10kΩ | 1 |
+| R3 | Resistor | SMD-1206 | 130Ω | 1 |
+| C1 | Tantalum capacitor | SMD-1206 | 10uF | 1 |
+| C2-C6 | Capacitor | SMD-1206 | 100nF | 5 |
+| Q1 | BJT Transistor | SOT-23 | MMBT3904 | 1 |
+| Q2 | FET Transistor | SOT-23 | AO3401 | 1 |
+| LED1 | LED | SMD-1206 | Vf=2V | 1 |
 | LD1117 | Voltage regulator | SOT223 | LD1117S33TR | 1 |
-| MAX3232 | RS232 Driver | DIP16 | MAX3232CPE | 1 |
+| MAX3232 | RS232 Driver | SOIC16 | MAX3232IDR/IDRG4 | 1 |
 | Pin socket | Connector | 2.54mm single row | 8-pin female | 2 |
 | Pin header | Connector | 2.54mm single row | 8-pin male | 2 |
 | Pin header, angled | Connector | 2.54mm single row | 4-pin male | 1 |
@@ -66,7 +74,6 @@ Additional parts:
 | Component  | Type | Package | Quantity |
 | ---------- | ---- | ------- | -------- |
 | *Wemos D1 mini* | *ESP8266 board* | *Lite/Pro/Pro_V2* | *1* | 
-| *IC socket (optional)* | *2.54mm THT* | *DIP16* | *1* |
 
 ## Assembly and application
 1. Clone or download this repository.
