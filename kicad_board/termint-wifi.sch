@@ -509,7 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	5365 6495 5365 7275
 $Comp
-L Device:C C1
+L Device:CP C1
 U 1 1 5ED33633
 P 5365 7425
 F 0 "C1" H 5480 7471 50  0000 L CNN
