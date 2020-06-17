@@ -62,7 +62,7 @@ The following components are needed to assemble the pcb:
 | C2-C6 | Capacitor | SMD-1206 | 100nF | 5 |
 | Q1 | BJT Transistor | SOT-23 | MMBT3904 | 1 |
 | Q2 | FET Transistor | SOT-23 | AO3401 | 1 |
-| LED1 | LED | SMD-1206 | Vf=2V | 1 |
+| LED1 | LED | SMD-1206 | Vf=2V, If=10mA | 1 |
 | LD1117 | Voltage regulator | SOT223 | LD1117S33TR | 1 |
 | MAX3232 | RS232 Driver | SOIC16 | MAX3232IDR/IDRG4 | 1 |
 | Pin socket | Connector | 2.54mm single row | 8-pin female | 2 |
